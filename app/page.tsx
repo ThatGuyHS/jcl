@@ -161,14 +161,16 @@ const ParallaxDesign = () => {
   </div>
 
   <div className="text-center mt-12">
-    <motion.button 
+    <motion.a 
+      href='https://docs.google.com/forms/d/e/1FAIpQLSetPqgC-_qflmIUOjlFBeTOmcZfKAC9jExvuq8DIEuKQJCBRQ/viewform?usp=sf_link'
+      target='_blank'
       className="bg-blue-500 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-600 transition duration-300 transform hover:scale-105"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 1 }}
     >
       Register Now
-    </motion.button>
+    </motion.a>
   </div>
 </section>
 
@@ -220,14 +222,16 @@ const ParallaxDesign = () => {
   </div>
 
   <div className="text-center mt-12">
-    <motion.button 
+    <motion.a 
+      href='https://docs.google.com/forms/d/e/1FAIpQLSetPqgC-_qflmIUOjlFBeTOmcZfKAC9jExvuq8DIEuKQJCBRQ/viewform?usp=sf_link'
+      target='_blank'
       className="bg-white text-blue-500 px-8 py-3 rounded-full text-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 1 }}
     >
       Register Now
-    </motion.button>
+    </motion.a>
   </div>
 </section>
         <section id='contact' className="py-20 px-8">
