@@ -55,7 +55,7 @@ const ParallaxDesign = () => {
           <motion.img 
             src="/layer5_logo.png" 
             alt="JCL Logo" 
-            className="h-full w-full md:w-1/3 mt-12"
+            className="h-auto w-auto md:w-1/3 mt-12"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
