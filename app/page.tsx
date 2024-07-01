@@ -235,7 +235,7 @@ const ParallaxDesign = () => {
           <form className="max-w-lg mx-auto">
             <input type="text" placeholder="Name" className="w-full mb-4 p-2 border rounded" />
             <input type="email" placeholder="Email" className="w-full mb-4 p-2 border rounded" />
-            <textarea placeholder="Message" className="w-full mb-4 p-2 border rounded" rows="4"></textarea>
+            <textarea placeholder="Message" className="w-full mb-4 p-2 border rounded" rows={4}></textarea>
             <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-105 w-full">
               Send Message
             </button>
