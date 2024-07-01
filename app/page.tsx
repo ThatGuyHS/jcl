@@ -240,7 +240,7 @@ const ParallaxDesign = () => {
   </div>
 </section>
         <section id='contact' className="py-20 px-8">
-          <h2 className="text-4xl font-bold mb-8 text-center">Contact Us</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
           <form className="max-w-lg mx-auto">
             <input type="text" placeholder="Name" className="w-full mb-4 p-2 border rounded" />
             <input type="email" placeholder="Email" className="w-full mb-4 p-2 border rounded" />
