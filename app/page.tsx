@@ -65,28 +65,33 @@ const ParallaxDesign = () => {
       </div>
 
 {/* Navbar */}
-<nav className="fixed top-0 left-0 right-0 z-30 flex justify-between items-center bg-black bg-opacity-50 backdrop-blur-md h-20"> {/* Increased height */}
-  <div className="relative flex items-center justify-center h-full w-64 pl-2"> {/* Added padding for alignment */}
+<nav className="fixed top-0 left-0 right-0 z-30 flex justify-between items-center bg-black bg-opacity-50 backdrop-blur-md h-20">
+  <div className="flex items-center justify-start w-1/4 h-full pl-2">
     <img 
       src="/JCL_logo.png" 
       alt="JCL Logo"
-      style={{ maxHeight: '90%', maxWidth: 'none', height: 'auto' }} // Adjusted for larger logo
+      style={{ maxHeight: '90%', maxWidth: 'none', height: 'auto' }}
     />
   </div>
 
-  <div className="hidden md:flex space-x-6 items-center justify-center">
-    <a href="#" className="text-white hover:text-blue-300 transition duration-300">Home</a>
-    <a href="#" className="text-white hover:text-blue-300 transition duration-300">About</a>
-    <a href="#contact" className="text-white hover:text-blue-300 transition duration-300">Contact</a>
+  <div className="flex-grow flex justify-center items-center">
+    <div className="hidden md:flex space-x-6">
+      <a href="#" className="text-white hover:text-blue-300 transition duration-300 py-7 px-3">Home</a>
+      <a href="#" className="text-white hover:text-blue-300 transition duration-300 py-7 px-3">About</a>
+      <a href="#contact" className="text-white hover:text-blue-300 transition duration-300 py-7 px-3">Contact</a>
+    </div>
   </div>
-  <a href='https://docs.google.com/forms/d/e/1FAIpQLSetPqgC-_qflmIUOjlFBeTOmcZfKAC9jExvuq8DIEuKQJCBRQ/viewform?usp=sf_link' target='_blank' className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-105 mr-2">
-    Register
-  </a>
-  <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white mr-2">
-    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-    </svg>
-  </button>
+
+  <div className="flex items-center justify-end w-1/4 h-full pr-2">
+    <a href='https://docs.google.com/forms/d/e/1FAIpQLSetPqgC-_qflmIUOjlFBeTOmcZfKAC9jExvuq8DIEuKQJCBRQ/viewform?usp=sf_link' target='_blank' className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+      Register
+    </a>
+    <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-white ml-4">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
 </nav>
 
 
